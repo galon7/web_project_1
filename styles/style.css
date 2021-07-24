@@ -37,14 +37,18 @@
 }
 
 .logo {
+  position: absolute;
+  background-size: cover;
+  z-index: 1;
+}
+
+.logo_place_header {
+  background-image: url("/images/logo_place_header.png");
   width: 154px;
   height: 31px;
-  position: absolute;
-  z-index: 1;
   top: 30px;
   left: 64px;
 }
-
 
 .header__title {
   position: absolute;
@@ -87,15 +91,14 @@
 }
 
 .description {
+  max-width: 80%;
   margin-top: 100px;
+  margin: 100px auto;
 }
 
-/* Added margins so it will look more like in the brief */
 .two-columns {
   display: flex;
   justify-content: space-between;
-  margin-left: 150px;
-  margin-right: 150px;
 }
 
 .two-columns__brief {
@@ -264,4 +267,77 @@
 
 .table__text_theme_dark {
 
+}
+
+.footer {
+  background-color: #1F1F1F;
+  min-height: 350px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+
+  width: 90%;
+  position: relative;
+  color: white;
+  margin: auto;
+}
+
+.footer__logo_place_footer {
+  background-image: url("/images/logo_place_footer.png");
+  background-size: cover;
+  width: 183px;
+  height: 35px;
+}
+
+.footer__column_content_copyright{
+  margin-top: 0;
+  flex-basis: 711px;
+}
+
+.footer__author {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.footer__column_content_about {
+  margin-top: 0;
+}
+
+.footer__column_content_social {
+  margin-top: 0;
+}
+
+.footer__column-link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__social-icons {
+  margin-right: 10px;
+}
+
+.footer__column_heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.footer__column_list {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 0;
+  list-style: none;
 }
