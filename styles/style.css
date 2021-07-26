@@ -219,6 +219,7 @@
 }
 
 .kaufman {
+  z-index: 1;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -227,7 +228,6 @@
 }
 
 .section-title_theme_dark {
-  z-index: 2;
   color: white;
   line-height: 69px;
   font-size: 60px;
@@ -237,7 +237,6 @@
 }
 
 .section-subtitle_theme_dark {
-  z-index: 2;
   color: white;
   line-height: 34px;
   font-size: 24px;
@@ -248,7 +247,7 @@
 
 .kaufman__triangle {
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   right: -124px;
   top: 0;
 }
