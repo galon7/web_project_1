@@ -21,29 +21,19 @@
   /* parameters for the header section */
 }
 
-.margin-remove {
-  margin: 0;
-  padding: 0;
-}
-
-.margin-b-30 {
-  margin-bottom: 30px;
-  margin-top: 0;
-}
-
-.link-color {
+.header__link {
   color: #2F80ED;
   text-decoration: none;
 }
 
 .logo {
-  position: absolute;
   background-size: cover;
   z-index: 1;
 }
 
 .logo_place_header {
-  background-image: url("/images/logo_place_header.png");
+  position: absolute;
+  background-image: url("../images/logo_place_header.png");
   width: 154px;
   height: 31px;
   top: 30px;
@@ -51,13 +41,13 @@
 }
 
 .header__title {
-  position: absolute;
   z-index: 1;
-  width: 730px;
+  max-width: 730px;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
-  left: 64px;
+  margin-left: 64px;
+  padding: 0;
 }
 
 .header__subtitle {
@@ -92,13 +82,13 @@
 
 .description {
   max-width: 80%;
-  margin-top: 100px;
   margin: 100px auto;
 }
 
 .two-columns {
   display: flex;
   justify-content: space-between;
+  margin: 0;
 }
 
 .two-columns__brief {
@@ -106,6 +96,8 @@
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+  margin: 0;
+  color: #2F80ED;
 }
 
 .two-columns__main-text{
@@ -117,15 +109,19 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  margin: 0 auto 30px;
 }
 
-.span-accent {
+.two-columns__paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.two-columns__span-accent {
   font-weight: bold;
 }
 
-.section__title {
+.section-title {
   max-width: 60%;
-  margin-top: 100px;
   line-height: 69px;
   font-size: 60px;
   font-weight: bold;
@@ -133,7 +129,7 @@
   margin: 100px auto 0;
 }
 
-.section__subtitle {
+.section-subtitle {
   max-width: 60%;
   line-height: 34px;
   font-size: 24px;
@@ -148,6 +144,7 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: auto;
+  padding: 0;
   list-style-type: none;
 }
 
@@ -158,7 +155,6 @@
 
 .table__heading {
   margin-top: 0;
-  margin-bottom: 20px;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
@@ -168,15 +164,17 @@
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-}
-
-.table__text-buttom {
   margin-top: 20px;
 }
 
 .feynman {
+  min-height: 790px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color:  #F2F2F2;
+  position: relative;
   margin-top: 100px;
-  height: 790px;
 }
 
 .feinman__image {
@@ -191,7 +189,6 @@
 .feynman__title {
   z-index: 2;
   width: 775px;
-  top: 100px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
@@ -202,6 +199,7 @@
 .feynman__subtitle {
   z-index: 2;
   margin-top: 70px;
+  margin-bottom: 0;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -216,6 +214,8 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+  color: #2F80ED;
+  text-decoration: none;
 }
 
 .kaufman {
@@ -226,20 +226,24 @@
   overflow: hidden;
 }
 
-.section__title_theme_dark {
+.section-title_theme_dark {
   z-index: 2;
   color: white;
   line-height: 69px;
   font-size: 60px;
   font-weight: bold;
+  text-align: center;
+  min-width: 60%;
 }
 
-.section__subtitle_theme_dark {
+.section-subtitle_theme_dark {
   z-index: 2;
   color: white;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+  text-align: center;
+  min-width: 60%;
 }
 
 .kaufman__triangle {
@@ -249,7 +253,7 @@
   top: 0;
 }
 
-.table__theme_dark{
+.table_theme_dark{
   margin-bottom: 90px;
 }
 /* including elements with key-value modifiers */
@@ -282,32 +286,31 @@
   display: flex;
   justify-content: space-between;
   width: 90%;
-  position: relative;
   color: white;
   margin: auto;
   padding-top: 60px;
   padding-bottom: 40px;
 }
 
-.footer__logo_place_footer {
-  background-image: url("/images/logo_place_footer.png");
+.footer__column {
+}
+
+.logo_place_footer {
+  background-image: url("../images/logo_place_footer.png");
   background-size: cover;
   width: 183px;
   height: 35px;
 }
 
 .footer__column_content_copyright{
-  position: relative;
-  align-content: space-between;
-  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex-basis: 711px;
   min-height: 250px;
 }
 
 .footer__author {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -332,7 +335,7 @@
   margin-right: 10px;
 }
 
-.footer__column_heading {
+.footer__column-heading {
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
@@ -340,10 +343,11 @@
   margin-bottom: 20px;
 }
 
-.footer__column_list {
+.footer__list {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
   padding: 0;
+  margin: 0;
   list-style: none;
 }
