@@ -28,7 +28,7 @@
 
 .logo {
   background-size: cover;
-  z-index: 1;
+  z-index: 2;
 }
 
 .logo_place_header {
@@ -41,22 +41,23 @@
 }
 
 .header__title {
-  z-index: 1;
+  z-index: 2;
   max-width: 730px;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
-  margin-left: 64px;
+  margin: 0 0 0 64px;
   padding: 0;
 }
 
 .header__subtitle {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   width: 388px;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  margin: 0;
   bottom: 30px;
   left: 64px;
 }
@@ -73,6 +74,7 @@
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
 .header__square-pic {
   position: absolute;
+  z-index: 0;
   top: 64px;
   right: 0px;
   height: 568px;
@@ -81,14 +83,14 @@
 }
 
 .description {
-  max-width: 80%;
-  margin: 100px auto;
+  margin: 100px auto 0;
 }
 
 .two-columns {
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  margin: 0 auto 0 auto;
+  width: 80%;
 }
 
 .two-columns__brief {
@@ -120,13 +122,17 @@
   font-weight: bold;
 }
 
+.digits {
+  margin: 100px 0 100px 0;
+}
+
 .section-title {
   max-width: 60%;
   line-height: 69px;
   font-size: 60px;
   font-weight: bold;
   text-align: center;
-  margin: 100px auto 0;
+  margin: 0 auto 0;
 }
 
 .section-subtitle {
@@ -142,7 +148,7 @@
   max-width: 1100px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: auto;
   padding: 0;
   list-style-type: none;
@@ -150,11 +156,11 @@
 
 .table__cell {
   max-width: 250px;
-  margin-top: 60px;
+  margin: 60px 0 0 0;
 }
 
 .table__heading {
-  margin-top: 0;
+  margin: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
@@ -164,17 +170,16 @@
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  margin-top: 20px;
+  margin: 20px 0 0 0;
 }
 
 .feynman {
-  min-height: 790px;
+  min-height: 690px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   background-color:  #F2F2F2;
   position: relative;
-  margin-top: 100px;
+  padding-top: 100px;
 }
 
 .feinman__image {
@@ -194,12 +199,12 @@
   font-weight: bold;
   text-align: center;
   margin: 0 auto 0;
+  padding: 0;
 }
 
 .feynman__subtitle {
   z-index: 2;
-  margin-top: 70px;
-  margin-bottom: 0;
+  margin: 70px auto 0;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -225,14 +230,11 @@
   position: relative;
   background-color: #1F1F1F;
   overflow: hidden;
+  padding: 90px 0 90px 0;
 }
 
 .section-title_theme_dark {
   color: white;
-  line-height: 69px;
-  font-size: 60px;
-  font-weight: bold;
-  text-align: center;
   min-width: 60%;
 }
 
@@ -252,9 +254,6 @@
   top: 0;
 }
 
-.table_theme_dark{
-  margin-bottom: 90px;
-}
 /* including elements with key-value modifiers */
 .table__cell_theme_dark {
   width: 200px;
@@ -265,13 +264,13 @@
 }
 
 .table__heading_theme_dark {
-  line-height: 30px;
-  font-size: 18px;
+  line-height: 1.15;
+  font-size: 24px;
   font-weight: bold;
 }
 
 .table__text_theme_dark {
-  line-height: 30px;
+  line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
 }
@@ -322,16 +321,23 @@
 }
 
 .footer__column_content_social {
-  margin-top: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .footer__column-link {
   color: white;
   text-decoration: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 .footer__social-icons {
   margin-right: 10px;
+  padding: 0;
+  list-style: none;
 }
 
 .footer__column-heading {
