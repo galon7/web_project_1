@@ -1,0 +1,12 @@
+/* here we have two examples of selectors in order to remind you how to set styles for elements */
+.header__square-pic {
+  position: absolute;
+  z-index: 0;
+  top: 64px;
+  right: 0px;
+  height: 568px;
+  width: 568px;
+  background-color: #2F80ED;
+  transform: rotate(-15deg);
+  animation: rotation linear 20s infinite;
+}
