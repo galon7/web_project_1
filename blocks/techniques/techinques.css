@@ -2,15 +2,3 @@
 .techniques {
   margin: 100px 0 0 0;
 }
-
-.techniques > .section-title {
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: bold;
-}
-
-.techniques > .section-subtitle {
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-}

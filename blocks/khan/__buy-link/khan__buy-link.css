@@ -8,6 +8,7 @@
   text-decoration: none;
   margin: 0 0 0 48px;
   transition: opacity 0.5s linear;
+  align-self: baseline;
 }
 
 .khan__buy-link:hover {

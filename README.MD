@@ -1,5 +1,3 @@
 Project name: "Project 2"
 
-Project description: This is a BEM project.
-
-Future plans: I don't wanna see this project ever again.
+This project is a webpage with differnetly styled blocks that uses new HTML elements that I learned, like inline frames. I also used new css properties for transformation and animation. A big part of the project was organizing the file stracture according to BEM.

@@ -3,12 +3,3 @@
   max-width: 250px;
   margin: 60px 0 0 0;
 }
-
-/* including elements with key-value modifiers */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-  z-index: 2;
-}
